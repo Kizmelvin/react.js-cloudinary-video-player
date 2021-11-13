@@ -1,14 +1,14 @@
 import React from "react";
 import "./styles.css";
-import "cloudinary-video-player/dist/cld-video-player.min.css";
-
-import VideoPlayer from "./VideoPlayer";
+import VideoPlayer from "./Components/VideoPlayer";
+import VideoPlaylist from "./Components/playlist-player";
 
 export default function App() {
   return (
     <div className="App">
       <VideoPlayer />
-      {/* React component for video player*/}
+      <br />
+      <VideoPlaylist />
     </div>
   );
 }
