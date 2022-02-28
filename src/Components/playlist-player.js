@@ -23,6 +23,9 @@ function VideoPlaylist() {
     player.playlistByTag("playlist-video", {
       autoAdvance: false,
       repeat: true,
+      analytics: {
+        events: ["play", "paused", "ended"],
+      },
     });
   };
 
