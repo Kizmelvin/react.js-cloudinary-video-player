@@ -15,6 +15,9 @@ function VideoPlaylist() {
         direction: "horizontal",
         total: 4,
       },
+      analytics: {
+        events: ["play", "paused", "ended"],
+      },
     });
 
     player.playlistByTag("playlist-video", {
